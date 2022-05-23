@@ -30,9 +30,9 @@ export default {
       title: 'Ronrons',
       meta: [
         {
-          hid: 'Verificador se o dia de hoje é um domingo',
-          name: 'Hoje é domingo?',
-          content: 'Verificador se o dia de hoje é um domingo',
+          hid: 'Ronrons, o jogo mais fofo de todos!',
+          name: 'Ronrons',
+          content: 'Ronrons, o jogo mais fofo de todos!',
         },
       ],
     }
@@ -79,6 +79,7 @@ export default {
 
       // tempo do pisco
       if (!this.isPaused) {
+        this.hasClicked = false
         Math.round(Math.random()) >= 0.5 // cor da rodada (1 = clicar 2= não clicar)
           ? (this.roundCondition = 1)
           : (this.roundCondition = 2)
