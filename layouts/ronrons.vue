@@ -38,13 +38,13 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 
-import headerRonrons from '~/components/headerRonrons.vue'
-import dialogRonrons from '~/components/dialogRonrons.vue'
-import rankingdialogRonrons from '~/components/rankingdialogRonrons.vue'
+import HeaderRonrons from '~/components/HeaderRonrons.vue'
+import DialogRonrons from '~/components/DialogRonrons.vue'
+import rankingdialogRonrons from '~/components/RankingDialogRonrons.vue'
 
 export default {
   name: 'ronronsLayout',
-  components: { headerRonrons, dialogRonrons, rankingdialogRonrons },
+  components: { HeaderRonrons, DialogRonrons, rankingdialogRonrons },
 
   data() {
     return {
