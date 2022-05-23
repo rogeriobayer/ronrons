@@ -25,8 +25,8 @@
         </div>
         <v-btn
           icon
-          @click="clickOnPauseIcon"
           class="purple lighten-2 mr-3 mt-3 white--text"
+          @click="clickOnPauseIcon"
         >
           <v-icon>{{ pauseIcon }}</v-icon>
         </v-btn>
@@ -43,7 +43,7 @@ import DialogRonrons from '~/components/DialogRonrons.vue'
 import rankingdialogRonrons from '~/components/RankingDialogRonrons.vue'
 
 export default {
-  name: 'ronronsLayout',
+  name: 'RonronsLayout',
   components: { HeaderRonrons, DialogRonrons, rankingdialogRonrons },
 
   data() {

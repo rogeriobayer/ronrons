@@ -69,15 +69,11 @@ export default {
     ...mapActions(['earnPoints', 'lostPoints']),
     repeatAfterSeconds() {
       console.log('time', this.difficulty * 1.5)
-      // tempo da repetição
       // eslint-disable-next-line no-use-before-define
       this.intervalID = setInterval(this.makeARound, this.difficulty * 1.5) // eslint-disable-line no-use-before-define
     },
     async makeARound() {
-      // const time = Math.round(Math.random() * 1000)
-      console.log('timeround', this.difficulty / 3)
-
-      // tempo do pisco
+      // tempo da sessão
       if (!this.isPaused) {
         this.hasClicked = false
         Math.round(Math.random()) >= 0.5 // cor da rodada (1 = clicar 2= não clicar)
@@ -109,7 +105,6 @@ export default {
     },
 
     timeout(ms) {
-      console.log(ms)
       return new Promise((resolve) => setTimeout(resolve, ms))
     },
   },

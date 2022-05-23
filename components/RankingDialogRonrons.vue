@@ -23,8 +23,8 @@
       </v-btn>
 
       <v-progress-circular
-        indeterminate
         v-if="loading"
+        indeterminate
         color="amber"
       ></v-progress-circular>
 
@@ -125,9 +125,8 @@ export default {
       this.loading = true
       this.$axios
         .get('ranking')
-        .then((data) => {
-          console.log(data.data)
-          this.rankingResults = data.data
+        .then((response) => {
+          this.rankingResults = response.data
           this.loading = false
         })
         .catch((response) => {

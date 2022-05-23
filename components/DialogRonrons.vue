@@ -47,12 +47,12 @@
                 <v-col cols="12" sm="12" md="12">
                   <v-form ref="form" v-model="valid" lazy-validation>
                     <v-text-field
+                      v-model="formSignup.user"
                       label="Username"
                       required
                       hint="isso vai para o ranking! Seja criativo!"
                       :counter="10"
                       :rules="nameRules"
-                      v-model="formSignup.user"
                     ></v-text-field>
                     <v-text-field
                       v-model="formSignup.password"
@@ -94,12 +94,12 @@
                     lazy-validation
                   >
                     <v-text-field
+                      v-model="formSignin.user"
                       label="Username"
                       required
                       hint="Bem vindo de volta"
                       :counter="10"
                       :rules="nameRules"
-                      v-model="formSignin.user"
                     ></v-text-field>
                     <v-text-field
                       v-model="formSignin.password"
@@ -124,8 +124,8 @@
         </v-tab-item>
       </v-tabs>
       <v-progress-circular
-        indeterminate
         v-if="loading"
+        indeterminate
         color="amber"
       ></v-progress-circular>
     </v-card>
