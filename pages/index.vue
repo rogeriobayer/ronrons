@@ -47,11 +47,11 @@ export default {
     },
     catRound() {
       if (this.roundCondition === 1) {
-        return 'https://d33wubrfki0l68.cloudfront.net/1f05809cc92136e63bee2138e769f00c55060b07/cd5bf/yes-cat.png'
+        return 'yes-cat.png'
       } else if (this.roundCondition === 2) {
-        return 'https://d33wubrfki0l68.cloudfront.net/524a9448e0ef6a844bf8b3adfbc42cfcc852a929/efbce/no-cat.png'
+        return 'no-cat.png'
       }
-      return 'https://d33wubrfki0l68.cloudfront.net/6b1c5c45aa28e7a604fc9e0de40ee378747693d7/46a22/default-cat.png'
+      return 'default-cat.png'
     },
     theCatVelocity() {
       if (!this.isPaused) {
